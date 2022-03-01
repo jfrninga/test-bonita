@@ -1,3 +1,15 @@
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 15px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,6 +17,28 @@ html {
 body {
   margin: auto;
   background: url(../images/background.png) top/cover no-repeat;
+}
+
+a {
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+a.red {
+  color: #ffff;
+  background-color: #E31937;
+}
+
+a.blue {
+  color: #ffff;
+  background-color: #0B4361;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 section#main {
@@ -21,13 +55,7 @@ section#main div.button {
 }
 
 section#main div.button div.btn {
-  background-color: #E31937;
-  margin: 5px;
-  border-radius: 50px;
-}
-
-section#main div.button a {
-  color: #ffff;
+  margin: 10px 5px;
 }
 
 section#video div.video {
@@ -41,12 +69,18 @@ section#video div.video {
 
 section#video div.video img {
   width: 30%;
-  margin-top: 170px;
+  margin-top: 6%;
+}
+
+@media screen and (max-width: 480px) {
+  section#video div.video img {
+    width: 70%;
+  }
 }
 
 section#camp {
   position: relative;
-  margin-top: 0px;
+  margin-top: 5%;
   margin-bottom: 20px;
 }
 
@@ -54,26 +88,28 @@ section#camp div.camp-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 section#camp div.camp-content div.left {
   width: calc(45% - 20px);
-}
-
-section#camp div.camp-content div.left div.picture {
-  position: absolute;
-  top: 105px;
-  margin-left: 20%;
+  text-align: center;
 }
 
 section#camp div.camp-content div.right {
   width: calc(45% - 20px);
   padding: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  section#camp div.camp-content div.left, section#camp div.camp-content div.right {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 section div.camp {
@@ -85,8 +121,14 @@ section div.camp {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 115px;
+  margin-bottom: 6%;
   margin-top: 35px;
+}
+
+@media screen and (max-width: 480px) {
+  section div.camp {
+    margin-top: 0px;
+  }
 }
 
 section div.camp div.left {
@@ -99,6 +141,13 @@ section div.camp div.right {
   padding-left: 60px;
 }
 
+@media screen and (max-width: 480px) {
+  section div.camp div.left, section div.camp div.right {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
 section#bonita div.btn-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,19 +158,15 @@ section#bonita div.btn-content {
   margin-bottom: 75px;
 }
 
-section#bonita div.btn-content div.btn1 button {
+section#bonita div.btn-content div.btn1 a {
+  color: #ffff;
   text-align: center;
   background-color: #E31937;
   border-radius: 50px;
-  padding: 5px 0px;
-  border: none;
+  padding: 10px 20px;
 }
 
-section#bonita div.btn-content div.btn1 button a {
-  color: #ffff;
-}
-
-section#bonita div.btn-content div.btn1 button img {
+section#bonita div.btn-content div.btn1 img {
   width: 10%;
 }
 
@@ -129,10 +174,18 @@ section#bonita div.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 120px;
+}
+
+@media screen and (max-width: 480px) {
+  section#bonita div.main {
+    margin-bottom: 0px;
+  }
 }
 
 section#bonita div.main div.left {
@@ -161,6 +214,13 @@ section#bonita div.main div.right ul li {
   list-style-type: none;
 }
 
+@media screen and (max-width: 480px) {
+  section#bonita div.main div.left, section#bonita div.main div.right {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
 section#bonita div.image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,5 +232,11 @@ section#bonita div.image {
 
 section#bonita div.image img {
   width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+  section#bonita div.image img {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=landingpage.css.map */

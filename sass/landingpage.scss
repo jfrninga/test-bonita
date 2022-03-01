@@ -1,4 +1,16 @@
 //Scss code here
+h1{
+    @media screen and (max-width: 480px) {
+       font-size: 20px;
+    }
+}
+
+p{
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,6 +18,24 @@ html {
 body{
     margin: auto;
     background: url(../images/background.png) top / cover no-repeat;
+}
+
+a{
+    transition-duration: 150ms;
+    border-radius: 50px;
+    padding: 10px 20px;
+    &.red{
+        color: #ffff;
+        background-color: #E31937;
+    }
+    &.blue{
+        color: #ffff;
+        background-color: #0B4361;
+    }
+    &:hover{
+        text-decoration: none;
+        opacity: 0.8;
+    }
 }
 
 section#main{
@@ -17,12 +47,7 @@ section#main{
             text-align: center;
             margin-top: 12px;
             div.btn{
-                background-color: #E31937;
-                margin: 5px;
-                border-radius: 50px;
-            }
-            a{
-                color: #ffff;
+                margin: 10px 5px;
             }
         }
 }
@@ -33,30 +58,36 @@ section#video{
         justify-content: center;
         img{
             width: 30%;
-            margin-top: 170px;
+            margin-top: 6%;
+            @media screen and (max-width: 480px) {
+                width: 70%;
+            }
         }
     }
+    
 }
 
 section#camp{
     position: relative;
-    margin-top: 0px;
+    margin-top: 5%;
     margin-bottom: 20px;
     div.camp-content{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         div.left{
             width: calc(45% - 20px);
-            div.picture{
-                position: absolute;
-                top: 105px;
-                margin-left: 20%;
-            }
+            text-align: center;
         }
         div.right{
             width: calc(45% - 20px);
             padding: 80px;
+        }
+        @media screen and (max-width: 480px) {
+            div.left, div.right{
+                width: 100%;
+                padding: 20px;
+            }
         }
     }
 }
@@ -66,8 +97,11 @@ section{
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin-bottom: 115px;
+        margin-bottom: 6%;
         margin-top: 35px;
+        @media screen and (max-width: 480px) {
+            margin-top: 0px;
+        }
         div.left{
             width: calc(50% - 0px);
             padding-left: 20em;
@@ -76,6 +110,12 @@ section{
             width: calc(50% - 20px);
             padding-left: 60px;
            
+        }
+        @media screen and (max-width: 480px) {
+            div.left, div.right{
+                width: 100%;
+                padding: 20px;
+            }
         }
     }
 }
@@ -86,25 +126,26 @@ section#bonita{
         justify-content: center;
         margin-bottom: 75px;
         div.btn1{
-            button{
+            a{
+                color: #ffff;
                 text-align: center;
                 background-color: #E31937;
                 border-radius: 50px;
-                padding: 5px 0px;
-                border: none;
-                a{
-                    color: #ffff;
+                padding: 10px 20px;
                 }
                 img{
                     width: 10%;
                 }
-            }
         }
     }
     div.main{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 120px;
+        @media screen and (max-width: 480px) {
+         margin-bottom: 0px;
+        }
         div.left{
             width: calc(20% - 30px);
             margin-left: 60px;
@@ -127,77 +168,21 @@ section#bonita{
                 }
             }
         }
+        @media screen and (max-width: 480px) {
+            div.left, div.right{
+                width: 100%;
+                padding: 20px;
+            }
+        }
     }
     div.image{
         display: flex;
         justify-content: center;
         img{
             width: 40%;
+            @media screen and (max-width: 480px) {
+                    width: 70%;
+            }
         }
     }
 }
-
-//responsive
-// @media (min-width: 480px) {
-//     section#main{
-//         margin-top: 0;
-//         font-size: 15px;
-//         h1{
-//             font-size: 20px;
-//         }
-//         div.button{
-
-//         }
-//     }
-
-//     section#video{
-//         div.video{
-//             img{
-//                 width: 40%;
-//                 margin-top: 50px;
-//             }
-//         }
-//     }
-
-//     section#camp{
-//         div.left{
-//             div.picture{
-//                 margin-left: 10% !important;
-//                 img{
-//                     width: 55%;
-//                 }
-//             }
-//         }
-//         div.right{
-
-//         }
-//     }
-
-//     section{
-//         div.camp{
-//             margin-top: 0;
-//             margin-bottom: 50px;
-//             h2{
-//                 font-size: 17px;
-//             }
-//             div.left{
-//                 width: 100%;
-//                 padding-left: 4em;
-//                 font-size: 13px;
-//             }
-//             div.right{
-//                 width: 100%;
-//                 padding-left: 4em;
-//                 font-size: 13px;
-//             }
-//         }
-//     }
-
-//     section#bonita{
-//         div.image{
-//             img{
-//                 width: 75%;
-//             }
-//         }
-//     }
-// }
