@@ -1,0 +1,203 @@
+//Scss code here
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: auto;
+    background: url(../images/background.png) top / cover no-repeat;
+}
+
+section#main{
+    margin-top: 40px;
+    div.main-title{
+        text-align: center;
+    }
+        div.button{
+            text-align: center;
+            margin-top: 12px;
+            div.btn{
+                background-color: #E31937;
+                margin: 5px;
+                border-radius: 50px;
+            }
+            a{
+                color: #ffff;
+            }
+        }
+}
+
+section#video{
+    div.video{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 30%;
+            margin-top: 170px;
+        }
+    }
+}
+
+section#camp{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    div.camp-content{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.left{
+            width: calc(45% - 20px);
+            div.picture{
+                position: absolute;
+                top: 105px;
+                margin-left: 20%;
+            }
+        }
+        div.right{
+            width: calc(45% - 20px);
+            padding: 80px;
+        }
+    }
+}
+
+section{
+    div.camp{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 115px;
+        margin-top: 35px;
+        div.left{
+            width: calc(50% - 0px);
+            padding-left: 20em;
+        }
+        div.right{
+            width: calc(50% - 20px);
+            padding-left: 60px;
+           
+        }
+    }
+}
+
+section#bonita{
+    div.btn-content{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 75px;
+        div.btn1{
+            button{
+                text-align: center;
+                background-color: #E31937;
+                border-radius: 50px;
+                padding: 5px 0px;
+                border: none;
+                a{
+                    color: #ffff;
+                }
+                img{
+                    width: 10%;
+                }
+            }
+        }
+    }
+    div.main{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+        div.left{
+            width: calc(20% - 30px);
+            margin-left: 60px;
+            div.picture{
+                img{
+                    width: 95%;
+                }
+            }
+        }
+        div.right{
+            width: calc(40% - 95px);
+            margin-bottom: 70px;
+            a{
+                color: #E31937;
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+    div.image{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 40%;
+        }
+    }
+}
+
+//responsive
+// @media (min-width: 480px) {
+//     section#main{
+//         margin-top: 0;
+//         font-size: 15px;
+//         h1{
+//             font-size: 20px;
+//         }
+//         div.button{
+
+//         }
+//     }
+
+//     section#video{
+//         div.video{
+//             img{
+//                 width: 40%;
+//                 margin-top: 50px;
+//             }
+//         }
+//     }
+
+//     section#camp{
+//         div.left{
+//             div.picture{
+//                 margin-left: 10% !important;
+//                 img{
+//                     width: 55%;
+//                 }
+//             }
+//         }
+//         div.right{
+
+//         }
+//     }
+
+//     section{
+//         div.camp{
+//             margin-top: 0;
+//             margin-bottom: 50px;
+//             h2{
+//                 font-size: 17px;
+//             }
+//             div.left{
+//                 width: 100%;
+//                 padding-left: 4em;
+//                 font-size: 13px;
+//             }
+//             div.right{
+//                 width: 100%;
+//                 padding-left: 4em;
+//                 font-size: 13px;
+//             }
+//         }
+//     }
+
+//     section#bonita{
+//         div.image{
+//             img{
+//                 width: 75%;
+//             }
+//         }
+//     }
+// }

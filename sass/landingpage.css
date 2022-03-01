@@ -1,0 +1,176 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  background: url(../images/background.png) top/cover no-repeat;
+}
+
+section#main {
+  margin-top: 40px;
+}
+
+section#main div.main-title {
+  text-align: center;
+}
+
+section#main div.button {
+  text-align: center;
+  margin-top: 12px;
+}
+
+section#main div.button div.btn {
+  background-color: #E31937;
+  margin: 5px;
+  border-radius: 50px;
+}
+
+section#main div.button a {
+  color: #ffff;
+}
+
+section#video div.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#video div.video img {
+  width: 30%;
+  margin-top: 170px;
+}
+
+section#camp {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+section#camp div.camp-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#camp div.camp-content div.left {
+  width: calc(45% - 20px);
+}
+
+section#camp div.camp-content div.left div.picture {
+  position: absolute;
+  top: 105px;
+  margin-left: 20%;
+}
+
+section#camp div.camp-content div.right {
+  width: calc(45% - 20px);
+  padding: 80px;
+}
+
+section div.camp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 115px;
+  margin-top: 35px;
+}
+
+section div.camp div.left {
+  width: calc(50% - 0px);
+  padding-left: 20em;
+}
+
+section div.camp div.right {
+  width: calc(50% - 20px);
+  padding-left: 60px;
+}
+
+section#bonita div.btn-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 75px;
+}
+
+section#bonita div.btn-content div.btn1 button {
+  text-align: center;
+  background-color: #E31937;
+  border-radius: 50px;
+  padding: 5px 0px;
+  border: none;
+}
+
+section#bonita div.btn-content div.btn1 button a {
+  color: #ffff;
+}
+
+section#bonita div.btn-content div.btn1 button img {
+  width: 10%;
+}
+
+section#bonita div.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 120px;
+}
+
+section#bonita div.main div.left {
+  width: calc(20% - 30px);
+  margin-left: 60px;
+}
+
+section#bonita div.main div.left div.picture img {
+  width: 95%;
+}
+
+section#bonita div.main div.right {
+  width: calc(40% - 95px);
+  margin-bottom: 70px;
+}
+
+section#bonita div.main div.right a {
+  color: #E31937;
+}
+
+section#bonita div.main div.right ul {
+  padding-left: 0;
+}
+
+section#bonita div.main div.right ul li {
+  list-style-type: none;
+}
+
+section#bonita div.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#bonita div.image img {
+  width: 40%;
+}
+/*# sourceMappingURL=landingpage.css.map */
